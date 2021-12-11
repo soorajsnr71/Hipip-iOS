@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MMPlayerView
 
 class MainPlayerCell: UITableViewCell {
 
@@ -15,7 +16,9 @@ class MainPlayerCell: UITableViewCell {
     @IBOutlet weak var imgView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        HipipButton.ovalCorner()
+        buttonBG.roundCorner()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

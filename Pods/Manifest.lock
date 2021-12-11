@@ -1,0 +1,16 @@
+PODS:
+  - MMPlayerView (6.0.2)
+
+DEPENDENCIES:
+  - MMPlayerView
+
+SPEC REPOS:
+  trunk:
+    - MMPlayerView
+
+SPEC CHECKSUMS:
+  MMPlayerView: e28bace82369bcfbfbe29f9dcd30eeb641a46754
+
+PODFILE CHECKSUM: bbc1c3aba961cd6b32ff958739a597839f18551d
+
+COCOAPODS: 1.10.2

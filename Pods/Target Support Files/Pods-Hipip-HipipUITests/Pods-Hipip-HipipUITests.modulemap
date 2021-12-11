@@ -1,0 +1,6 @@
+framework module Pods_Hipip_HipipUITests {
+  umbrella header "Pods-Hipip-HipipUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_Hipip {
+  umbrella header "Pods-Hipip-umbrella.h"
+
+  export *
+  module * { export * }
+}
