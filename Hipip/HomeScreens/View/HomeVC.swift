@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import MMPlayerView
 
 class HomeVC: UIViewController {
+    
+    let mmPlayerLayer = MMPlayerLayer()
     
     @IBOutlet weak var tableVW: UITableView!
     
@@ -84,7 +87,8 @@ extension HomeVC:UITableViewDelegate,UITableViewDataSource{
         
         if indexPath.section == 2 {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "MainPlayerCell", for: indexPath) as? MainPlayerCell else { return UITableViewCell() }
-           // cell.setupCell()
+            cell.loadVideo(url: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4")
+
             return cell
         }
         

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -24,6 +24,10 @@
                             <constraint firstAttribute="height" constant="455" id="GAJ-yY-O4V"/>
                         </constraints>
                     </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vdm-Si-fY4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="455"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="YvY-dd-KGC">
                         <rect key="frame" x="20" y="16.5" width="60" height="59"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -98,12 +102,17 @@
                     <constraint firstItem="DWO-hn-80i" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="K3n-0R-BBl"/>
                     <constraint firstItem="YvY-dd-KGC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="N2M-6S-WwG"/>
                     <constraint firstAttribute="bottom" secondItem="DWO-hn-80i" secondAttribute="bottom" constant="50" id="Nuu-TT-waZ"/>
+                    <constraint firstItem="vdm-Si-fY4" firstAttribute="bottom" secondItem="DWO-hn-80i" secondAttribute="bottom" id="Pqd-of-Zto"/>
                     <constraint firstAttribute="trailing" secondItem="DWO-hn-80i" secondAttribute="trailing" id="Tf6-fY-mUM"/>
+                    <constraint firstItem="vdm-Si-fY4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Zyc-fN-GtN"/>
                     <constraint firstItem="YSW-z4-z51" firstAttribute="leading" secondItem="s5W-uA-3g0" secondAttribute="leading" id="hlZ-N8-haQ"/>
+                    <constraint firstItem="vdm-Si-fY4" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="i3F-Zq-hOU"/>
                     <constraint firstItem="YSW-z4-z51" firstAttribute="top" secondItem="s5W-uA-3g0" secondAttribute="bottom" constant="10" id="iPG-NG-lgv"/>
+                    <constraint firstItem="vdm-Si-fY4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="mFF-RU-aFr"/>
                     <constraint firstItem="1FI-uf-z2X" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="qAS-wG-jRk"/>
                     <constraint firstItem="Z6V-lF-nYp" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="qjH-wo-Dih"/>
                     <constraint firstItem="s5W-uA-3g0" firstAttribute="top" secondItem="YvY-dd-KGC" secondAttribute="top" id="rna-m0-vU0"/>
+                    <constraint firstAttribute="trailing" secondItem="vdm-Si-fY4" secondAttribute="trailing" id="sXD-VY-Hrz"/>
                     <constraint firstItem="s5W-uA-3g0" firstAttribute="leading" secondItem="YvY-dd-KGC" secondAttribute="trailing" constant="10" id="y5E-vT-FCa"/>
                 </constraints>
             </tableViewCellContentView>
@@ -114,6 +123,7 @@
                 <outlet property="ProfilePicture" destination="YvY-dd-KGC" id="6KR-c1-vZo"/>
                 <outlet property="buttonBG" destination="1FI-uf-z2X" id="gLe-Se-FS7"/>
                 <outlet property="imgView" destination="DWO-hn-80i" id="3lP-jU-R9k"/>
+                <outlet property="playerView" destination="vdm-Si-fY4" id="Cwp-8s-ZF2"/>
             </connections>
             <point key="canvasLocation" x="171.73913043478262" y="244.75446428571428"/>
         </tableViewCell>
